@@ -58,6 +58,7 @@ main {
 
 .main-content {
     display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -151,5 +152,8 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .main-content {
+        flex-direction: row; 
     }
 }
