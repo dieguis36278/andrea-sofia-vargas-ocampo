@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    /* outline:1px solid red; */
+    font-family: var(--ft-roboto);
+}
+
+:root {
+    --clr-yellow: #FCFFC1;
+    --clr-orange: #FFE893;
+    --clr-dark-orange: #FBB4A5;
+    --clr-brown-red: #AB4459;
+    --clr-pink: #FB9EC6;
+    --ft-roboto: "Roboto", sans-serif;
+}
+
+.footer-down {
+    height: 100vh;
+    display: grid; 
+    grid-template-rows: auto 1fr auto
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto; 
+    margin-bottom: 2rem;
+}
+
+header {
+    background-color: var(--clr-dark-orange);
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem ;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.nav-items {
+    display: flex;
+    gap: 1rem; 
+}
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--clr-yellow);
+}
+
+.main-content {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.main-img {
+    flex: 1; 
+}
+
+.main-text {
+    flex: 1; 
+
+}
+.main-title {
+    padding: 1rem 0;
+}
+
+.main-text > * {
+    padding: .5rem 1rem;
+}
+.lang-sections {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+h3 {
+    padding: .5rem 0;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    padding: .8rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px .2px;
+}
+
+.eng {
+    background-color: var(--clr-orange);
+}
+
+.esp {
+    background-color: lightcyan;
+}
+
+.jap {
+    background-color: var(--clr-orange);
+}
+
+footer {
+    background-color: var(--clr-dark-orange);
+}
+
+.footer-text { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text > p {
+    width: fit-content;
+    padding: .6rem;
+}
+
+.container-no-margin {
+    margin-bottom: 0;
+}
+
+@media (min-width: 500px){
+    .nav-bar {
+        flex-direction: row;
+    }
+    .cards {
+        flex-direction: row;
+    }
+    .card {
+        flex: 1; 
+    }
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

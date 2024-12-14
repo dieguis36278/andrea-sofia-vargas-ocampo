@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="footer-down">
+        <header>
+            <div class="container container-no-margin">
+                <div class="nav-bar">
+                    <div class="logo">Andrea Sofía Vargas Ocampo</div>
+                    <div class="nav-items">
+                        <a href="#sobremi">Sobre mí</a>
+                        <a href="#clases">Clases</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div >
+                    <h1 id="sobremi" class="main-title">Profesora de lenguas</h1>
+                    <div class="main-content">
+                        <div class="main-img">
+                            <img src="sofia japon.jpg" alt="">
+                        </div>
+                        <div class="main-text">
+                            <h2>Licenciatura en Lingüística Aplicada</h2>
+                            <p>Licenciatura en Lingüística Aplicada en la Escuela Nacional de Lenguas, Lingüística y Traducción, UNAM.</p>
+                            <h2>Estudios en Osaka, Japón</h2>
+                            <p>Estudios en enseñanza de lenguas extranjeras y japonés en la Universidad Kyoto Sangyo Daigaku</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container lang-sections">
+                <h2 id="clases">Clases</h2>
+                <div class="lang">
+                    <h3>Inglés</h3>
+                    <div class="cards">
+                        <div class="card eng">
+                            <h4>Inglés Básico</h4>
+                            <p>Desde cero.</p>
+                        </div>
+                        <div class="card eng">
+                            <h4>Inglés Intermedio</h4>
+                            <p>Clases para mejorar y practicar tu inglés.</p>
+                        </div>
+                        <div class="card eng">
+                            <h4>Inglés Avanzado</h4>
+                            <p>Inglés académico y preparación para certificaciones.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lang">
+                    <h3>Español para extranjeros</h3>
+                    <div class="cards">
+                        <div class="card esp">
+                            <h4>Español Básico</h4>
+                            <p>Desde cero.</p>
+                        </div>
+                        <div class="card esp">
+                            <h4>Español Intermedio</h4>
+                            <p>Clasea para mejorar y practicar tu español.</p>
+                        </div>
+                        <div class="card esp">
+                            <h4>Español Avanzado</h4>
+                            <p>Español académico y preparación para certificaciones.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lang">
+                    <h3>Japonés</h3>
+                    <div class="cards">
+                        <div class="card jap">
+                            <h4>Japonés Básico</h4>
+                            <p>Desde cero.</p>
+                        </div>
+                        <div class="card jap">
+                            <h4>Japonés para viajes</h4>
+                            <p>Japonés esencial para tu próximo viaje.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 id="contacto">Contacto</h2>
+                <p>Correo electrónico: jaleitadeuvita@gmail.com</p>
+                <p>WhatsApp: +52 1 55 8131 5872</p>
+            </div>
+
+        </main>
+        <footer>
+            <div class="container container-no-margin">
+                <div class="footer-text">
+                    <p>Andrea Sofía Vargas Ocampo</p>
+                    <p id="year"></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const d = new Date();
+        let currentYear = d.getFullYear();
+        
+        let yearText = document.getElementById("year");
+        yearText.innerHTML = currentYear;
+    </script>
+</body>
+</html>
